@@ -1,8 +1,9 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../css/top.css" />
     <title>米澤総合法律事務所</title>
   </head>
@@ -11,11 +12,13 @@
     <header class="header-container">
       <div class="header-wrapper">
         <div class="header-content">
-          <nav class="header-link-area" aria-label="ヘッダナビ一覧">
-            <a class="header-logo" href="#">
-              <img src="../image/logo-main.png" alt="米澤総合法律事務所" />
+          <div class="header-logo">
+            <a class="header-logo-link" href="#">
+              <img src="../image/logo-header.png" alt="米澤総合法律事務所" />
             </a>
+          </div>
 
+          <nav class="header-link-area" aria-label="ヘッダナビ一覧">
             <div class="header-nav">
               <a class="header-nav-link" href="#">弁護士紹介</a>
               <a class="header-nav-link" href="#">対応業務</a>
@@ -24,99 +27,350 @@
               <a class="header-nav-link" href="#">事務所案内</a>
               <a class="header-nav-link" href="#">よくあるご質問</a>
             </div>
+          </nav>
 
-            <div class="header-right">
-              <div class="header-sns">
-                <a class="header-sns-link" href="#" aria-label="YouTubeへ遷移">
-                  <img src="../image/logo-youtube.png" alt="" />
-                </a>
-                <a class="header-sns-link" href="#" aria-label="Facebookへ遷移">
-                  <img src="../image/logo-facebook.png" alt="" />
-                </a>
-                <a
-                  class="header-sns-link"
-                  href="#"
-                  aria-label="Instagramへ遷移"
-                >
-                  <img src="../image/logo-instagram.png" alt="" />
-                </a>
-              </div>
-
-              <a class="header-cta" href="#">
-                オンラインサロンへの<br />
-                ご入会はこちらから
+          <div class="header-right">
+            <div class="header-sns">
+              <a class="header-sns-link" href="#" aria-label="YouTubeへ遷移">
+                <img src="../image/logo-youtube.png" alt="" />
+              </a>
+              <a class="header-sns-link" href="#" aria-label="Facebookへ遷移">
+                <img src="../image/logo-facebook.png" alt="" />
+              </a>
+              <a class="header-sns-link" href="#" aria-label="Instagramへ遷移">
+                <img src="../image/logo-instagram.png" alt="" />
               </a>
             </div>
-          </nav>
+
+            <a class="header-cta" href="#">
+              オンラインサロンへの<br />
+              ご入会はこちらから
+              <span class="header-cta-arrow">▶</span>
+            </a>
+          </div>
         </div>
       </div>
     </header>
 
     <main>
-      <section class="fv" aria-label="ファーストビュー">
-        <div class="fv-overlay"></div>
-        <div class="fv-inner">
-          <h1 class="fv-title">
-            顧問弁護士がいると<br />
-            利益が上がる
-          </h1>
-        </div>
-      </section>
-
-      <section class="strong-points">
-        <div class="container">
-          <h2 class="section-title">米澤総合法律事務所の強み</h2>
-
-          <div class="strong-point-cards">
-            <article class="strong-point-card">
-              <div class="strong-point-image">
-                <img src="../image/strong-point-01.png" alt="" />
-              </div>
-              <h3 class="strong-point-title">
-                「弁護士らしくない」<br />
-                親しみやすさと即応力
-              </h3>
-              <p class="strong-point-text">
-                弁護士にありがちな「敷居の高さ」を感じさせません。小さな不安や初期段階のご相談も歓迎します。即時対応と、やさしく寄り添う姿勢を大切にしています。
-              </p>
-            </article>
-
-            <article class="strong-point-card">
-              <div class="strong-point-image">
-                <img src="../image/strong-point-02.png" alt="" />
-              </div>
-              <h3 class="strong-point-title">
-                トラブルを防ぐ<br />
-                事前防衛のリーガルサポート
-              </h3>
-              <p class="strong-point-text">
-                問題が深刻化してからの対応だけが弁護士の仕事ではありません。早期相談により、時間・費用・リスクを最小限に抑えます。法的の「健康診断役」としてサポートします。
-              </p>
-            </article>
-
-            <article class="strong-point-card">
-              <div class="strong-point-image">
-                <img src="../image/strong-point-03.png" alt="" />
-              </div>
-              <h3 class="strong-point-title">
-                真摯さと戦略性を兼ね備えた<br />
-                参謀力
-              </h3>
-              <p class="strong-point-text">
-                ご相談者様の立場に真摯に向き合うと同時に、冷静で現実的な戦略を重視します。最善の結果を目指し、ご相談者様と最後まで伴走します。
-              </p>
-            </article>
-          </div>
-
-          <div class="strong-point-actions">
-            <a class="more-button" href="#">
-              詳しく見る <span class="more-arrow">▶</span>
-            </a>
+      <section class="fv-container" aria-label="ファーストビュー">
+        <div class="fv-wrapper">
+          <div class="fv-content">
+            <h1 class="fv-title">
+              顧問弁護士がいると<br />
+              利益が上がる
+            </h1>
           </div>
         </div>
       </section>
-    </main>
 
-    <script src="../js/script.js"></script>
+      <section class="strong-points-container" aria-label="事務所の強み">
+        <div class="strong-points-wrapper">
+          <div class="strong-points-content">
+            <h2 class="section-title">米澤総合法律事務所の強み</h2>
+
+            <div class="strong-point-cards">
+              <article class="strong-point-card">
+                <div class="strong-point-image">
+                  <img src="../image/strong-point-01.png" alt="" />
+                </div>
+                <h3 class="strong-point-title">
+                  「弁護士らしくない」<br />
+                  親しみやすさと即応力
+                </h3>
+                <p class="strong-point-text">
+                  弁護士にありがちな「敷居の高さ」を感じさせません。小さな不安や初期段階のご相談も歓迎します。即時対応と、やさしく寄り添う姿勢を大切にしています。
+                </p>
+              </article>
+
+              <article class="strong-point-card">
+                <div class="strong-point-image">
+                  <img src="../image/strong-point-02.png" alt="" />
+                </div>
+                <h3 class="strong-point-title">
+                  トラブルを防ぐ<br />
+                  事前防衛のリーガルサポート
+                </h3>
+                <p class="strong-point-text">
+                  問題が深刻化してからの対応だけが弁護士の仕事ではありません。早期相談により、時間・費用・リスクを最小限に抑えます。法的の「健康診断役」としてサポートします。
+                </p>
+              </article>
+
+              <article class="strong-point-card">
+                <div class="strong-point-image">
+                  <img src="../image/strong-point-03.png" alt="" />
+                </div>
+                <h3 class="strong-point-title">
+                  真摯さと戦略性を兼ね備えた<br />
+                  参謀力
+                </h3>
+                <p class="strong-point-text">
+                  ご相談者様の立場に真摯に向き合うと同時に、冷静で現実的な戦略を重視します。最善の結果を目指し、ご相談者様と最後まで伴走します。
+                </p>
+              </article>
+            </div>
+
+            <div class="strong-point-actions">
+              <a class="more-button" href="#">
+                詳しく見る <span class="more-arrow">▶</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="lawyer-intro-container" aria-label="弁護士紹介">
+        <div class="lawyer-intro-wrapper">
+          <div class="lawyer-intro-content">
+            <h2 class="lawyer-intro-title">弁護士紹介</h2>
+
+            <div class="lawyer-intro-area">
+              <div class="lawyer-intro-image">
+                <img src="../image/lawyer-photo.png" alt="弁護士写真" />
+              </div>
+
+              <div class="lawyer-intro-description">
+                <p class="lawyer-intro-subtitle">
+                  あなたのすぐそばにいる<br />
+                  弁護士でありたい
+                </p>
+
+                <p class="lawyer-intro-text">
+                  米澤総合法律事務所所長の米澤章吾と申します。<br /><br />
+                  皆様の弁護士に対するイメージはどのようなものでしょうか。何となく頼みにくい、高価である、最後の拠り所だ、というとっつきにくいイメージをお持ちの方もいらっしゃるかもしれません。<br /><br />
+                  私は、良い意味で「弁護士らしくない弁護士」を目指し、私の氏名のイニシャルをもじり、
+                  ４Ｓ４Ｙ弁護士（即時に動く、真摯でしたたかな参謀でありながらも、やさしく寄り添うあなたの（your）拠り所）を標榜しています。
+                </p>
+
+                <a class="more-button" href="#">
+                  詳しく見る <span class="more-arrow">▶</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="testimonial-container" aria-label="証言からの推薦文">
+        <div class="testimonial-wrapper">
+          <div class="testimonial-content">
+            <h2 class="testimonial-title">顧客からの推薦文</h2>
+
+            <div class="testimonial-cards">
+              <article class="testimonial-card">
+                <div class="testimonial-card-image">
+                  <img src="../image/testimonial-01.png" alt="" />
+                </div>
+                <div class="testimonial-card-description">
+                  <p class="testimonial-card-text">
+                    非常にレスポンスが早く、判断を急ぐ場面においても<br />
+                    安心して意思決定を行うことができます
+                  </p>
+
+                  <hr class="testimonial-divider" />
+
+                  <p class="testimonial-card-author">
+                    このたび、弁護士
+                    米澤先生につきまして、推薦の言葉を申し述べさせていただきます。<br />
+                    米澤先生には、当社の顧問弁護士として日頃よりご支援をいただいておりますが、特に企業法務における知見と実務能力の高さは際立っております。<br />
+                    契約書の作成・確認、法的リスクの整理、経営判断に関わる法務相談に至るまで、常に的確かつ実践的な助言をいただいております。<br />
+                    また、米澤先生は非常にレスポンスが早く、経営者として判断を急ぐ場面においても、迅速かつ要点を押さえた対応をしてくださるため、安心して意思決定を行うことができます。<br /><br />
+
+                    何より印象的なのは、常に「経営者の立場に立って考える」という姿勢を貫いておられる点です。単なる法的正論に終始するのではなく、事業の継続性や経営上の現実を踏まえたうえで、最善の選択肢を共に考えてくださる、真に経営者の味方である弁護士だと感じております。<br />
+                    以上の理由から、米澤先生は企業経営に寄り添い、実務とスピードを兼ね備えた、非常に信頼できる弁護士であると自信をもって推薦いたします。
+                  </p>
+                  <p class="testimonial-card-company">
+                    むつみ産業株式会社 代表取締役 曽根 哲 様
+                  </p>
+                </div>
+              </article>
+
+              <article class="testimonial-card">
+                <div class="testimonial-card-image">
+                  <img src="../image/testimonial-02.png" alt="" />
+                </div>
+
+                <div class="testimonial-card-description">
+                  <p class="testimonial-card-text">
+                    企業の盾となり共に成長を目指すパートナーとして<br />
+                    他に代えがたい信頼できる弁護士です
+                  </p>
+
+                  <hr class="testimonial-divider" />
+
+                  <p class="testimonial-card-author">
+                    私が米澤弁護士と顧問契約を締結した理由は、その圧倒的なスピード感と、<br />
+                    経営に深く寄り添う参謀としての姿勢にあります。<br /><br />
+
+                    契約書のリーガルチェックや法律相談などの迅速な対応は、経営の機動力を止めることがありません。<br /><br />
+
+                    また、弁護士らしくない弁護士として親しみやすさを持ちつつ、<br />
+                    独自に掲げる哲学（
+                    即時に動く、真摯でしたたかな参謀でありながらも、やさしく寄り添う拠り所
+                    ）の精神で多角的にサポートしてくれます。<br /><br />
+
+                    法的トラブルを大手術になる前に防ぐ事前防衛を重視するその哲学は、<br />
+                    企業の盾となり共に成長を目指すパートナーとして、他に代えがたい信頼できる弁護士です。
+                  </p>
+
+                  <p class="testimonial-card-company">
+                    株式会社中沢薬局 代表取締役 長谷川 湛龍 様
+                  </p>
+                </div>
+              </article>
+
+              <article class="testimonial-card">
+                <div class="testimonial-card-image">
+                  <img src="../image/testimonial-03.png" alt="" />
+                </div>
+
+                <div class="testimonial-card-description">
+                  <p class="testimonial-card-text">
+                    会社の不利益を徹底的に防いでくれる守りの強さはもちろん、<br />
+                    特筆すべきは返信の速さという誠実な対応です。
+                  </p>
+
+                  <hr class="testimonial-divider" />
+
+                  <p class="testimonial-card-author">
+                    株式会社BusinessForum・株式会社GOLDEN
+                    DAWNは、米澤総合法律事務所の米澤弁護士と顧問契約を結んでいます。<br />
+                    緻密なリーガルチェックで会社の不利益を徹底的に防いでくれる守りの強さはもちろん、特筆すべきは返信の速さという誠実な対応です。
+                    <br />
+                    米澤弁護士はプライベートでも気さくに様々な会へ同行してくださるなど、単なる「顧問」の枠を超えた信頼関係を築いています。攻めの経営を支える迅速なレスポンスと、細やかな配慮を兼ね備えた米澤弁護士は、弊社にとって欠かせない心強いパートナーです。<br />
+                    これからの事業展開においても、共に歩んでいただけることを確信しています。
+                  </p>
+
+                  <p class="testimonial-card-company">
+                    株式会社BusinessForum<br />
+                    株式会社GOLDEN DAWN 代表取締役 野口 大希 様
+                  </p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="cases-container" aria-label="事例集">
+        <div class="cases-wrapper">
+          <div class="cases-content">
+            <h2 class="cases-title">事例集</h2>
+
+            <div class="cases-slider">
+              <button
+                class="cases-slider-arrow cases-slider-arrow-prev"
+                aria-label="前へ"
+              >
+                <span class="more-arrow">◀</span>
+              </button>
+
+              <div class="cases-slider-card">
+                <div class="cases-slider-card-image">
+                  <img src="../image/case-01.png" alt="" />
+                </div>
+                <div class="cases-slider-card-description">
+                  <div class="cases-slider-card-tags">
+                    <span class="cases-slider-card-tag"
+                      >経営相談・顧問契約</span
+                    >
+                    <span class="cases-slider-card-tag">不動産業（法人）</span>
+                  </div>
+
+                  <p class="cases-slider-card-subtitle">
+                    "問題が起きてから"ではなく"起きる前"に相談できる体制を構築
+                  </p>
+
+                  <hr class="cases-slider-divider" />
+
+                  <p class="cases-slider-card-text">
+                    日常的に法的判断が求められる場面が多く、その都度インターネットで調べたり、判断に迷ったりしている状態でした。<br />
+                    顧問契約後は、ちょっとした疑問や判断に迷う場面でもすぐに相談できる環境が整いました。<br />
+                    法的な確認だけでなく、経営判断としてのバランスも踏まえた助言を受けられることで、<br />
+                    意思決定のスピードと安心感が大きく向上。<br />
+                    「弁護士が身近な存在になった」と感じ喜んでいただいています。
+                  </p>
+                </div>
+              </div>
+
+              <button
+                class="cases-slider-arrow cases-slider-arrow-next"
+                aria-label="次へ"
+              >
+                <span class="more-arrow">▶</span>
+              </button>
+            </div>
+
+            <p class="cases-note">
+              ※実際の事件には2つとして同じ事例はありません。あくまでも実際にあったケースにおいて、解決した1つの例であるものとしてご参照ください。
+            </p>
+
+            <div class="cases-actions">
+              <a class="more-button-dark" href="#">
+                詳しく見る <span class="more-arrow">▶</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="service-container" aria-label="サービス案内">
+        <div class="service-wrapper">
+          <div class="service-content">
+            <div class="service-cards">
+              <a class="service-card" href="#">
+                <div class="service-card-image">
+                  <img src="../image/service-01.png" alt="" />
+                </div>
+                <div class="service-card-overlay"></div>
+                <p class="service-card-title">対応業務</p>
+              </a>
+
+              <a class="service-card" href="#">
+                <div class="service-card-image">
+                  <img src="../image/service-02.png" alt="" />
+                </div>
+                <div class="service-card-overlay"></div>
+                <p class="service-card-title">料金プラン</p>
+              </a>
+
+              <a class="service-card" href="#">
+                <div class="service-card-image">
+                  <img src="../image/service-03.png" alt="" />
+                </div>
+                <div class="service-card-overlay"></div>
+                <p class="service-card-title">事務所案内</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="salon-container" aria-label="オンラインサロンのご案内">
+        <div class="salon-wrapper">
+          <div class="salon-content">
+            <h2 class="salon-title">オンラインサロンのご案内</h2>
+
+            <div class="salon-box">
+              <p class="salon-subtitle">
+                あなたの“身近な参謀”とつながるオンラインサロン
+              </p>
+
+              <p class="salon-text">
+                一人で悩まず、気軽に相談できる環境を。<br />
+                オンラインサロンでは、法律の知識だけでなく、考え方や判断のヒントも共有しています。<br />
+                初めての方でも安心してご参加いただけます。
+              </p>
+
+              <div class="salon-actions">
+                <a class="salon-button" href="#">
+                  詳しく見る <span class="salon-button-arrow">▶</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
   </body>
 </html>
