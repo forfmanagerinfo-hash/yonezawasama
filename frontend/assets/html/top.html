@@ -18,6 +18,47 @@
             </a>
           </div>
 
+          <input
+            type="checkbox"
+            id="menu-toggle"
+            class="menu-toggle-checkbox"
+          />
+
+          <label for="menu-toggle" class="hamburger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+
+          <label for="menu-toggle" class="menu-overlay"></label>
+
+          <div class="sp-menu">
+            <div class="sp-menu-header">
+              <div class="sp-menu-logo">
+                <img src="../image/logo-header.png" alt="米澤総合法律事務所" />
+              </div>
+              <label for="menu-toggle" class="sp-menu-close">×</label>
+            </div>
+
+            <nav class="sp-menu-nav">
+              <a class="sp-menu-link" href="#">ホーム</a>
+              <a class="sp-menu-link" href="#">弁護士紹介</a>
+              <a class="sp-menu-link" href="#">対応業務</a>
+              <a class="sp-menu-link" href="#">料金プラン</a>
+              <a class="sp-menu-link" href="#">ブログ</a>
+              <a class="sp-menu-link" href="#">事業所案内</a>
+              <a class="sp-menu-link" href="#">オンラインサロン</a>
+              <a class="sp-menu-link" href="#">よくある質問</a>
+              <a class="sp-menu-link" href="#">お問い合わせ</a>
+            </nav>
+
+            <div class="sp-menu-cta">
+              <a class="sp-menu-cta-button" href="#"
+                >オンラインサロンに申し込む</a
+              >
+            </div>
+          </div>
+
           <nav class="header-link-area" aria-label="ヘッダナビ一覧">
             <div class="header-nav">
               <a class="header-nav-link" href="#">弁護士紹介</a>
@@ -56,9 +97,13 @@
       <section class="fv-container" aria-label="ファーストビュー">
         <div class="fv-wrapper">
           <div class="fv-content">
-            <h1 class="fv-title">
-              顧問弁護士がいると<br />
-              利益が上がる
+            <h1 class="fv-title-pc">
+              顧問弁護士がいると<br class="pc-br" />利益が上がる
+            </h1>
+
+            <h1 class="fv-title-sp">
+              顧問弁護士<span>が</span><br />いると利益<span>が</span
+              ><br />上がる
             </h1>
           </div>
         </div>
@@ -67,7 +112,7 @@
       <section class="strong-points-container" aria-label="事務所の強み">
         <div class="strong-points-wrapper">
           <div class="strong-points-content">
-            <h2 class="section-title">米澤総合法律事務所の強み</h2>
+            <h2 class="strong-points-title">米澤総合法律事務所の強み</h2>
 
             <div class="strong-point-cards">
               <article class="strong-point-card">
@@ -388,7 +433,10 @@
                 </div>
                 <div class="news-text-area">
                   <div class="news-text">
-                    <h3>株式会社LegalOn Technologies様主催のセミナー講師登壇しました</h3>
+                    <h3>
+                      株式会社LegalOn
+                      Technologies様主催のセミナー講師登壇しました
+                    </h3>
                   </div>
                   <div class="news-triangle">
                     <p>▶</p>
@@ -406,7 +454,9 @@
                 </div>
                 <div class="news-text-area">
                   <div class="news-text">
-                    <h3>パートナー弁護士として、同組合が出展する「組合まつり」に出展者として参加いたしました。</h3>
+                    <h3>
+                      パートナー弁護士として、同組合が出展する「組合まつり」に出展者として参加いたしました。
+                    </h3>
                   </div>
                   <div class="news-triangle">
                     <p>▶</p>
@@ -440,6 +490,7 @@
           </div>
         </div>
       </section>
+
       <section>
         <div class="books-container">
           <div class="books-wrapper">
@@ -448,33 +499,33 @@
               <div class="books-flex-area">
                 <div class="books-flex">
                   <div class="books-flex-on">
-                      <img src="/yonezawahoritsuzimusyo/frontend/assets/image/book-01.png">
+                    <img src="../image/book-01.png" />
                   </div>
                   <div class="books-flex-under">
                     <p>
-                      労務管理のツボとコツが<br>
+                      労務管理のツボとコツが<br />
                       ゼッタイにわかる本「第1版」
                     </p>
                   </div>
                 </div>
                 <div class="books-flex">
                   <div class="books-flex-on">
-                      <img src="/yonezawahoritsuzimusyo/frontend/assets/image/book-02.png">
+                    <img src="../image/book-02.png" />
                   </div>
                   <div class="books-flex-under">
                     <p>
-                      労務管理のツボとコツが<br>
+                      労務管理のツボとコツが<br />
                       ゼッタイにわかる本「第2版」
                     </p>
                   </div>
                 </div>
                 <div class="books-flex">
                   <div class="books-flex-on">
-                      <img src="/yonezawahoritsuzimusyo/frontend/assets/image/book-03.png">
+                    <img src="../image/book-03.png" />
                   </div>
                   <div class="books-flex-under">
                     <p>
-                      労務管理のツボとコツが<br>
+                      労務管理のツボとコツが<br />
                       ゼッタイにわかる本「第3版」
                     </p>
                   </div>
@@ -484,13 +535,14 @@
           </div>
         </div>
       </section>
+
       <section>
         <div class="contact-container">
           <div class="contact-wrapper">
             <div class="contact-content">
               <h2 class="contact-title">お問い合わせはこちら</h2>
               <p>
-                オンラインサロンにご興味がある方、ご入会をご希望の方は、<br>
+                オンラインサロンにご興味がある方、ご入会をご希望の方は、<br />
                 お問い合わせフォームからお気軽にお問い合わせください。
               </p>
               <div class="contact-actions">
@@ -509,7 +561,7 @@
         <div class="footer-wrapper">
           <div class="footer-content">
             <div class="footer-logo">
-              <img src="../image/logo-footer.png">
+              <img src="../image/logo-footer.png" />
             </div>
             <div class="footer-page-link-list">
               <ul>
@@ -526,9 +578,15 @@
             </div>
             <div class="footer-sns-link-list">
               <ul>
-                <li><a href=""><img src="../image/logo-youtube.png"></a></li>
-                <li><a href=""><img src="../image/logo-facebook.png"></a></li>
-                <li><a href=""><img src="../image/logo-Instagram.png"></a></li>
+                <li>
+                  <a href=""><img src="../image/logo-youtube.png" /></a>
+                </li>
+                <li>
+                  <a href=""><img src="../image/logo-facebook.png" /></a>
+                </li>
+                <li>
+                  <a href=""><img src="../image/logo-Instagram.png" /></a>
+                </li>
               </ul>
             </div>
             <div class="footer-copyright">
@@ -538,7 +596,5 @@
         </div>
       </div>
     </footer>
-      
-
   </body>
 </html>

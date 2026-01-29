@@ -24,7 +24,7 @@
   background-color: rgba(6, 42, 82, 0.5);
 }
 
-.fv-title {
+.fv-title-pc {
   font-size: 135px;
   line-height: 155%;
   text-align: left;
@@ -33,27 +33,10 @@
   color: rgba(255, 255, 255, 1);
 }
 
-.section-title {
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 1.4;
-  color: rgba(6, 42, 82, 1);
+.fv-title-sp {
+  display: none;
 }
 
-.section-title-dark {
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 1.4;
-  color: rgba(255, 255, 255, 1);
-}
-
-.section-title-center {
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 1.4;
-  text-align: center;
-  color: rgba(6, 42, 82, 1);
-}
 .more-button {
   display: inline-flex;
   align-items: center;
@@ -64,6 +47,8 @@
   border: 1px solid rgba(40, 71, 107, 1);
   border-radius: 22px;
   font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 0.03em;
   color: rgba(40, 71, 107, 1);
   background-color: rgba(255, 255, 255, 0.7);
 }
@@ -93,7 +78,11 @@
   max-width: 1320px;
 }
 
-.section-title {
+.strong-points-title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: rgba(6, 42, 82, 1);
   text-align: center;
   font-size: 36px;
   font-weight: bold;
@@ -129,8 +118,7 @@
 .strong-point-title {
   margin: 24px 24px 0;
   font-size: 24px;
-  font-weight: 700;
-  line-height: 1.4;
+  letter-spacing: 0.04em;
   color: rgba(0, 0, 0, 1);
 }
 
@@ -167,6 +155,7 @@
   margin: 53px 0 0;
   font-size: 36px;
   font-weight: bold;
+  letter-spacing: 0.1em;
   color: rgba(40, 71, 107, 1);
   text-align: center;
 }
@@ -196,12 +185,14 @@
 
 .lawyer-intro-subtitle {
   font-size: 40px;
+  letter-spacing: 0.3em;
   color: rgba(40, 71, 107, 1);
 }
 
 .lawyer-intro-text {
   margin: 30px 0 0;
   font-size: 16px;
+  letter-spacing: 0.2em;
   color: rgba(40, 71, 107, 1);
 }
 
@@ -589,50 +580,50 @@
   font-size: 12px;
 }
 
-.news-wrapper{
+.news-wrapper {
   padding-top: 60px;
   padding-bottom: 60px;
 }
 
-.news-tag-area{
+.news-tag-area {
   display: flex;
   align-items: center;
   gap: 40px;
 }
 
-h2.news-title{
+h2.news-title {
   font-size: 36px;
   font-weight: 700;
-  color: #28476B;
+  color: #28476b;
   padding-bottom: 40px;
   text-align: center;
 }
 
-.news-content{
+.news-content {
   max-width: 1202px;
   width: 100%;
   margin: 0 auto;
 }
 
-.news-area{
-  border-bottom:1px solid rgb(40, 71, 107, 0.35);
+.news-area {
+  border-bottom: 1px solid rgb(40, 71, 107, 0.35);
   margin-bottom: 10px;
 }
 
-.news-text-area{
+.news-text-area {
   display: flex;
   justify-content: space-between;
   padding-top: 10px;
   padding-bottom: 10px;
 }
 
-.news-text h3{
+.news-text h3 {
   font-size: 20px;
   font-weight: 700;
 }
 
-.news-tag{
-  background-color: #28476B;
+.news-tag {
+  background-color: #28476b;
   padding-left: 17px;
   padding-right: 17px;
   height: 33px;
@@ -642,7 +633,7 @@ h2.news-title{
   justify-content: center;
 }
 
-.news-date p{
+.news-date p {
   font-size: 16px;
 }
 
@@ -657,7 +648,7 @@ h2.news-title{
   box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
-.books-container{
+.books-container {
   position: relative;
   background-image: url(../image/strong-point-02.png);
   background-repeat: no-repeat;
@@ -665,7 +656,7 @@ h2.news-title{
   background-size: cover;
 }
 
-.books-container::before{
+.books-container::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -673,52 +664,52 @@ h2.news-title{
   z-index: 1;
 }
 
-.books-container > *{
+.books-container > * {
   position: relative;
   z-index: 2;
 }
 
-.books-wrapper{
+.books-wrapper {
   padding-top: 60px;
   padding-bottom: 60px;
 }
 
-h2.books-title{
+h2.books-title {
   font-size: 36px;
   font-weight: 700;
-  color: #28476B;
+  color: #28476b;
   padding-bottom: 40px;
   text-align: center;
 }
 
-.books-flex-area{
+.books-flex-area {
   display: flex;
   justify-content: center;
 }
 
-.books-flex{
+.books-flex {
   padding: 24px;
 }
 
-.books-flex-on{
+.books-flex-on {
   padding-left: 50px;
   padding-right: 50px;
   padding-bottom: 24px;
 }
 
-.books-flex img{
+.books-flex img {
   width: 100%;
   max-width: 253px;
   margin: 0 auto;
 }
 
-.books-flex p{
+.books-flex p {
   font-size: 24px;
   font-weight: 700;
   padding-top: 24px;
 }
 
-.contact-container{
+.contact-container {
   position: relative;
   background-image: url(../image/service-03.png);
   background-repeat: no-repeat;
@@ -726,16 +717,16 @@ h2.books-title{
   background-size: cover;
 }
 
-.contact-wrapper{
+.contact-wrapper {
   padding-top: 80px;
   padding-bottom: 60px;
 }
 
-.contact-content{
+.contact-content {
   text-align: center;
 }
 
-.contact-container::before{
+.contact-container::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -743,85 +734,194 @@ h2.books-title{
   z-index: 1;
 }
 
-.contact-container > *{
+.contact-container > * {
   position: relative;
   z-index: 2;
 }
 
-h2.contact-title{
+h2.contact-title {
   font-size: 36px;
   font-weight: 700;
   color: #ffffff;
   text-align: center;
 }
 
-.contact-content p{
+.contact-content p {
   font-size: 20px;
   color: #ffffff;
   padding-top: 56px;
   padding-bottom: 56px;
 }
 
-a.contact-button{
+a.contact-button {
   width: 300px;
   background-color: #ffffff;
-  color: #28476B;
+  color: #28476b;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.15);
   height: 70px;
   font-size: 16px;
   display: flex;
-  align-items: center; 
+  align-items: center;
   justify-content: center;
   margin: 0 auto;
 }
 
-.footer-wrapper{
-  padding-top: 24px;
-}
+@media (max-width: 768px) {
+  .strong-points-title {
+    font-size: 24px;
+  }
 
-.footer-content{
-  text-align: center;
-}
+  .fv-container {
+    min-height: 500px;
+  }
 
-.footer-logo img{
-  width: 247px;
-  margin: 0 auto;
-}
+  .fv-title-pc {
+    display: none;
+  }
 
-.footer-page-link-list ul{
-  padding-left: 0;
-  display: flex;
-  justify-content: center;
-  gap: 24px;
-  padding-top: 24px;
-  padding-bottom: 24px;
-  list-style: none;
-}
+  .fv-title-sp {
+    display: inline;
+    font-size: 60px;
+    letter-spacing: 0.05em;
+    text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.25);
+    color: rgba(255, 255, 255, 1);
+  }
 
-.footer-sns-link-list ul{
-  padding-left: 0;
-  display: flex;
-  justify-content: center;
-  gap: 90px;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  list-style: none;
-}
+  .fv-title-sp span {
+    font-size: 48px;
+    letter-spacing: 0.05em;
+  }
 
-.footer-sns-link-list ul li a img{
-  width: 29px;
-}
+  .strong-points-container {
+    padding: 49px 0;
+  }
 
-.footer-sns-link-list ul li:first-child a img{
-  width: 41px;
-}
+  .strong-points-wrapper {
+    padding: 0 19px;
+  }
 
-.footer-copyright{
-  text-align: center;
-  padding-top: 56px;
-  padding-bottom: 16px;
-}
+  .strong-point-cards {
+    flex-direction: column;
+    gap: 50px;
+    margin: 19px 0 0;
+  }
 
-.footer-copyright p{
-  font-size: 10px;
+  .strong-point-card {
+    width: 100%;
+  }
+
+  .strong-point-image {
+    height: 200px;
+  }
+
+  .strong-point-title {
+    font-size: 20px;
+    font-weight: normal;
+    margin: 24px;
+  }
+
+  .strong-point-text {
+    font-size: 14px;
+    margin: 0 24px 42px;
+  }
+
+  .strong-point-actions {
+    justify-content: center;
+    margin: 43px 0 0;
+  }
+
+  .lawyer-intro-container {
+    padding: 20px 0 38px;
+  }
+
+  .lawyer-intro-content {
+    padding: 0 19px;
+  }
+
+  .lawyer-intro-title {
+    font-size: 24px;
+  }
+
+  .lawyer-intro-area {
+    flex-direction: column;
+    gap: 16px;
+    margin: 20px 0 0;
+  }
+
+  .lawyer-intro-image {
+    flex: none;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .lawyer-intro-image img {
+    min-width: 292px;
+    margin: 0 auto;
+  }
+
+  .lawyer-intro-subtitle {
+    font-size: 24px;
+    letter-spacing: 0.25em;
+  }
+
+  .lawyer-intro-text {
+    letter-spacing: 0.22em;
+  }
+
+  .lawyer-intro-description .more-button {
+    margin: 30px auto 0;
+    display: flex;
+  }
+
+  .testimonial-container {
+    padding: 50px 0 60px;
+  }
+
+  .testimonial-wrapper {
+    padding: 0 19px;
+  }
+
+  .testimonial-title {
+    font-size: 24px;
+  }
+
+  .testimonial-cards {
+    gap: 24px;
+    margin: 30px 0 0;
+  }
+
+  .testimonial-card {
+    flex-direction: column;
+  }
+
+  .testimonial-card:nth-child(even) {
+    flex-direction: column;
+  }
+
+  .testimonial-card-image {
+    flex: none;
+    width: 100%;
+    height: 200px;
+  }
+
+  .testimonial-card-description {
+    padding: 20px 16px;
+  }
+
+  .testimonial-card:nth-child(even) .testimonial-card-description {
+    padding: 20px 16px;
+  }
+
+  .testimonial-card-text {
+    font-size: 18px;
+  }
+
+  .testimonial-card-author {
+    font-size: 14px;
+  }
+
+  .testimonial-card-company {
+    font-size: 14px;
+    margin: 20px 0 0;
+  }
 }
