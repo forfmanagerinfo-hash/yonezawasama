@@ -3,6 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Antique&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../css/top.css" />
     <title>米澤総合法律事務所</title>
@@ -48,7 +53,36 @@
               <span class="header-cta-arrow">▶</span>
             </a>
           </div>
+
+          <button class="sp-menu-btn" type="button" aria-label="メニューを開く" aria-expanded="false">
+            <span></span><span></span><span></span>
+          </button>
         </div>
+      </div>
+
+      <div class="sp-drawer" aria-hidden="true">
+        <div class="sp-drawer-head">
+          <a class="sp-drawer-logo" href="#">
+            <img src="../image/logo-header-sp.png" alt="米澤総合法律事務所" />
+          </a>
+          <button class="sp-drawer-close" type="button" aria-label="メニューを閉じる">×</button>
+        </div>
+
+        <nav class="sp-drawer-nav" aria-label="モバイルメニュー">
+          <a class="sp-drawer-link" href="#">ホーム</a>
+          <a class="sp-drawer-link" href="#">弁護士紹介</a>
+          <a class="sp-drawer-link" href="#">対応業務</a>
+          <a class="sp-drawer-link" href="#">料金プラン</a>
+          <a class="sp-drawer-link" href="#">ブログ</a>
+          <a class="sp-drawer-link" href="#">事務所案内</a>
+          <a class="sp-drawer-link" href="#">オンラインサロン</a>
+          <a class="sp-drawer-link" href="#">よくある質問</a>
+          <a class="sp-drawer-link" href="#">お問い合わせ</a>
+        </nav>
+
+        <a class="sp-drawer-cta" href="#">
+          オンラインサロンに申し込む
+        </a>
       </div>
     </header>
 
@@ -56,9 +90,14 @@
       <section class="fv-container" aria-label="ファーストビュー">
         <div class="fv-wrapper">
           <div class="fv-content">
-            <h1 class="fv-title">
+            <h1 class="fv-title fv-title-pc">
               顧問弁護士がいると<br />
               利益が上がる
+            </h1>
+            <h1 class="fv-title fv-title-sp">
+              顧問弁護士<span>が</span><br />
+              いると利益<span>が</span><br />
+              上がる
             </h1>
           </div>
         </div>
@@ -141,10 +180,11 @@
                   私は、良い意味で「弁護士らしくない弁護士」を目指し、私の氏名のイニシャルをもじり、
                   ４Ｓ４Ｙ弁護士（即時に動く、真摯でしたたかな参謀でありながらも、やさしく寄り添うあなたの（your）拠り所）を標榜しています。
                 </p>
-
-                <a class="more-button" href="#">
-                  詳しく見る <span class="more-arrow">▶</span>
-                </a>
+                <div class="lawyer-intro-area">
+                  <a class="more-button" href="#">
+                    詳しく見る <span class="more-arrow">▶</span>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -158,13 +198,21 @@
 
             <div class="testimonial-cards">
               <article class="testimonial-card">
-                <div class="testimonial-card-image">
+                <div class="testimonial-card-image testimonial-card-image-pc">
                   <img src="../image/testimonial-01.png" alt="" />
                 </div>
+                <div class="testimonial-card-image testimonial-card-image-sp">
+                  <img src="../image/testimonial-01-sp.png" alt="" />
+                </div>
                 <div class="testimonial-card-description">
-                  <p class="testimonial-card-text">
+                  <p class="testimonial-card-text testimonial-card-text-pc">
                     非常にレスポンスが早く、判断を急ぐ場面においても<br />
                     安心して意思決定を行うことができます
+                  </p>
+                  <p class="testimonial-card-text testimonial-card-text-sp">
+                    非常にレスポンスが早く、<br />
+                    判断を急ぐ場面においても安心して<br />
+                    意思決定を行うことができます
                   </p>
 
                   <hr class="testimonial-divider" />
@@ -186,14 +234,22 @@
               </article>
 
               <article class="testimonial-card">
-                <div class="testimonial-card-image">
+                <div class="testimonial-card-image testimonial-card-image-pc">
                   <img src="../image/testimonial-02.png" alt="" />
+                </div>
+                <div class="testimonial-card-image testimonial-card-image-sp">
+                  <img src="../image/testimonial-02-sp.png" alt="" />
                 </div>
 
                 <div class="testimonial-card-description">
-                  <p class="testimonial-card-text">
+                  <p class="testimonial-card-text testimonial-card-text-pc">
                     企業の盾となり共に成長を目指すパートナーとして<br />
                     他に代えがたい信頼できる弁護士です
+                  </p>
+                  <p class="testimonial-card-text testimonial-card-text-sp">
+                    企業の盾となり共に成長を目指す<br />
+                    パートナーとして他に代えがたい<br />
+                    信頼できる弁護士です
                   </p>
 
                   <hr class="testimonial-divider" />
@@ -220,14 +276,22 @@
               </article>
 
               <article class="testimonial-card">
-                <div class="testimonial-card-image">
+                <div class="testimonial-card-image testimonial-card-image-pc">
                   <img src="../image/testimonial-03.png" alt="" />
+                </div>
+                <div class="testimonial-card-image testimonial-card-image-sp">
+                  <img src="../image/testimonial-03-sp.png" alt="" />
                 </div>
 
                 <div class="testimonial-card-description">
-                  <p class="testimonial-card-text">
+                  <p class="testimonial-card-text testimonial-card-text-pc">
                     会社の不利益を徹底的に防いでくれる守りの強さはもちろん、<br />
                     特筆すべきは返信の速さという誠実な対応です。
+                  </p>
+                  <p class="testimonial-card-text testimonial-card-text-sp">
+                    会社の不利益を徹底的に防いでくれる<br />
+                    守りの強さはもちろん、特筆すべきは<br />
+                    返信の速さという誠実な対応です。
                   </p>
 
                   <hr class="testimonial-divider" />
@@ -243,7 +307,7 @@
 
                   <p class="testimonial-card-company">
                     株式会社BusinessForum<br />
-                    株式会社GOLDEN DAWN 代表取締役 野口 大希 様
+                    株式会社GOLDEN DAWN <br class="testimonial-card-company-sp"/>代表取締役 野口 大希 様
                   </p>
                 </div>
               </article>
@@ -268,6 +332,14 @@
               <div class="cases-slider-card">
                 <div class="cases-slider-card-image">
                   <img src="../image/case-01.png" alt="" />
+                </div>
+                <div class="cases-slider-nav" aria-label="スライダー操作">
+                  <button class="cases-slider-arrow cases-slider-arrow-prev" aria-label="前へ">
+                    <span class="more-arrow">◀</span>
+                  </button>
+                  <button class="cases-slider-arrow cases-slider-arrow-next" aria-label="次へ">
+                    <span class="more-arrow">▶</span>
+                  </button>
                 </div>
                 <div class="cases-slider-card-description">
                   <div class="cases-slider-card-tags">
@@ -539,6 +611,37 @@
       </div>
     </footer>
       
+<script>
+(() => {
+  const root = document.body;
+
+  const close = () => root.classList.remove('is-open');
+  const toggle = () => root.classList.toggle('is-open');
+
+  document.addEventListener('click', (e) => {
+    const openBtn = e.target.closest('.sp-menu-btn');
+    const closeBtn = e.target.closest('.sp-drawer-close');
+    const drawerLink = e.target.closest('.sp-drawer a');
+
+    if (openBtn) {
+      e.preventDefault();
+      toggle();
+      return;
+    }
+
+    if (closeBtn || drawerLink) {
+      e.preventDefault();
+      close();
+      return;
+    }
+  }, { passive: false });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') close();
+  });
+})();
+</script>
+
 
   </body>
 </html>
